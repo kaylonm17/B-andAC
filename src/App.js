@@ -1,6 +1,9 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Navbar from './Navbar'
+import Card from './cards';
+import WelcomeBanner from './WelcomeBanner';
 
 function App() {
   return (
@@ -9,19 +12,36 @@ function App() {
             <Navbar />
       <header className="App-header">
 
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GET LIT
-        </a>
+      <div className="app">
+      <WelcomeBanner />
+
+    </div>
+
       </header>
+      <body>
+      <div className="app-container">
+      <Card
+        imageSrc="path-to-your-image1.jpg"
+        title="Air Conditioning Services"
+        description="We offer top-notch AC repair and installation services."
+        imageOnRight={false}
+      />
+      <Card
+        imageSrc="path-to-your-image2.jpg"
+        title="Heating Solutions"
+        description="Stay warm with our reliable heating solutions."
+        imageOnRight={true}
+      />
+      <Card
+        imageSrc="path-to-your-image2.jpg"
+        title="Heating Solutions"
+        description="Stay warm with our reliable heating solutions."
+        imageOnRight={false}
+      />
+      {/* Add more alternating cards as needed */}
+    </div>
+
+      </body>
     </div>
   );
 }
