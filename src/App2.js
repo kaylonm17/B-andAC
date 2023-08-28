@@ -1,17 +1,18 @@
 import './App.css';
 import Navbar from './Navbar'
 import React from 'react';
+import Footer from './footer';
 
 function App2() {
     return (
     
         <div className="App">
             <Navbar />
-      <div className="app">
+      <div className="app" >
       </div>
-        <h1>GET your FREE estimate!</h1>
+        <h1 className="app-color">GET your FREE estimate!</h1>
 
-    <body>
+    <body className="app-color">
     <div className="form-container">
     <div class="field">
   <label class="label">Name</label>
@@ -88,6 +89,7 @@ function App2() {
 </div>
 </div>
     </body>
+    <Footer></Footer>
     </div>
 
     );

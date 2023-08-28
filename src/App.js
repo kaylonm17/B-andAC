@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from './Navbar'
 import Card from './cards';
 import WelcomeBanner from './WelcomeBanner';
+import Footer from './footer';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
     </div>
 
       </body>
+      <Footer></Footer>
     </div>
   );
 }
