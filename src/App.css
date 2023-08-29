@@ -172,3 +172,33 @@ h1 {
 .footer-bottom p {
   font-size: 12px;
 }
+
+.terms-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.terms-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.terms-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.terms-box label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.terms-box input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+p2 {
+  color: black;
+}
