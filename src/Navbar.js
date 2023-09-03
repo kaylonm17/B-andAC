@@ -1,70 +1,39 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css'; // Import your custom CSS file for the navbar
 
-function Navbar() {
-    return (
-        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
-            </a>
-
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <ul>
-        <div id="navbarBasicExample" class="navbar-menu" >
-            <div class="navbar-start">
-            <li><a class="navbar-item">
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-brand">
+        <Link to="/" className="navbar-logo">
+          Your Logo
+        </Link>
+      </div>
+      <ul className="navbar-list">
+        <li className="navbar-item">
+          <Link to="/" className="navbar-link">
             Home
-            </a></li>
-
-            <a class="navbar-item">
-                Documentation
-            </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                More
-                </a>
-
-                <div class="navbar-dropdown">
-                <a class="navbar-item">
-                    About
-                </a>
-                <a class="navbar-item">
-                    Jobs
-                </a>
-                <a class="navbar-item">
-                    Contact
-                </a>
-                <hr class="navbar-divider"></hr>
-                <a class="navbar-item">
-                    Report an issue
-                </a>
-                </div>
-            </div>
-            </div>
-
-            <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                <a class="button is-info">
-                    <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                    Log in
-                </a>
-                </div>
-            </div>
-            </div>
-        </div>
-        </ul>
-        </nav>
-    );
-}
+          </Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/about" className="navbar-link">
+            About
+          </Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/services" className="navbar-link">
+            Services
+          </Link>
+        </li>
+        <li className="navbar-item">
+          <Link to="/contact" className="navbar-link">
+            Contact
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
 
 export default Navbar;

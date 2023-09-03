@@ -1,14 +1,16 @@
-import logo from './logo.svg';
+
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Import Switch correctly
 import Card from './cards';
 import WelcomeBanner from './WelcomeBanner';
 import Footer from './footer';
+import App2 from './App2';
 
 function App() {
   return (
-    
+    <Router>
     <div className="App">
             <Navbar />
       <header className="App-header">
@@ -44,7 +46,14 @@ function App() {
 
       </body>
       <Footer></Footer>
+      
+      <Switch>
+        <Route exact path="/" component={WelcomeBanner} />
+        <Route path="/app2" component={App2} />
+      </Switch>
+    
     </div>
+    </Router>
   );
 }
 
