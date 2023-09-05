@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch , Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './WelcomeBanner.css'; // Import your CSS file for styling
-import App2 from './App2'; // Import the App2 component
+
 
 const WelcomeBanner = () => {
   return (
@@ -12,9 +12,11 @@ const WelcomeBanner = () => {
         
           <h1 className="font-color">Welcome to B and AC</h1>
           <p>Problem solving made simple</p>
-          <Link to="./App2">
-          <button>Get an estimate</button>
-          </Link>
+          <ul>
+            <li>
+              <Link to="./App2">Get an estimate</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
