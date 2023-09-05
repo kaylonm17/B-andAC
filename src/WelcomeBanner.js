@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import './WelcomeBanner.css'; // Import your CSS file for styling
+import App2 from './App2';
 
 
 const WelcomeBanner = () => {
@@ -14,11 +15,14 @@ const WelcomeBanner = () => {
           <p>Problem solving made simple</p>
           <ul>
             <li>
-              <Link to="./App2">Get an estimate</Link>
+              <Link to="/App2">Get an estimate</Link>
             </li>
           </ul>
         </div>
       </div>
+      <Route path="/App2">
+        <App2/>
+      </Route>
     </header>
   );
 };

@@ -1,25 +1,26 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Card from './cards';
 import WelcomeBanner from './WelcomeBanner';
 import Footer from './footer';
+
 
 function App() {
   return (
     <div className="App">
       <Router> {/* This should be your top-level Router */}
         <Navbar />
-        <Routes>
+        <Switch>
           <Route exact path="/">
             <header className="App-header">
               <div className="app">
                 <WelcomeBanner />
               </div>
             </header>
-          </Route>
-          <Route exact path="/air-conditioning">
+
+          <body>
             <div className="app-container">
               <Card
                 imageSrc="path-to-your-image1.jpg"
@@ -28,8 +29,6 @@ function App() {
                 imageOnRight={false}
               />
             </div>
-          </Route>
-          <Route exact path="/heating-solutions">
             <div className="app-container">
               <Card
                 imageSrc="path-to-your-image2.jpg"
@@ -38,9 +37,18 @@ function App() {
                 imageOnRight={true}
               />
             </div>
+            <div className="app-container">
+              <Card
+                imageSrc="path-to-your-image1.jpg"
+                title="Air Conditioning Services"
+                description="We offer top-notch AC repair and installation services."
+                imageOnRight={false}
+              />
+            </div>
+          </body>
           </Route>
           {/* Add more routes for other services */}
-        </Routes>
+        </Switch>
         <Footer />
       </Router>
     </div>
