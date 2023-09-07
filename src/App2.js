@@ -1,13 +1,17 @@
 import './App.css';
+import './Form.css';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar'
 import React from 'react';
 import Footer from './footer';
+import App3 from './App3';
+import App4 from './App4';
 
 function App2() {
     return (
     
         <div className="App">
-            <Navbar />
+
       <div className="app" >
       </div>
         <h1 className="app-color">GET your FREE estimate!</h1>
@@ -15,9 +19,16 @@ function App2() {
     <body className="app-color">
     <div className="form-container">
     <div class="field">
-  <label class="label">Name</label>
+  <label class="label"> First Name</label>
   <div class="control">
-    <input class="input" type="text" placeholder="Name here"></input>
+    <input class="input" type="text" placeholder="First Name"></input>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Last Name</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Last Name"></input>
   </div>
 </div>
 
@@ -26,7 +37,6 @@ function App2() {
   <div class="control has-icons-right">
     <input class="input" type="text" placeholder="Address here"></input>
   </div>
-  <p class="help is-success">This username is available</p>
 </div>
 
 <div class="field">
@@ -61,7 +71,7 @@ function App2() {
   <div class="control">
     <label class="checkbox">
       <input type="checkbox"></input>
-      I agree to the <a href="#">terms and conditions</a>
+      I agree to the <a href="./App3">terms and conditions</a>
     </label>
   </div>
 </div>
@@ -81,7 +91,13 @@ function App2() {
 
 <div class="field is-grouped">
   <div class="control">
-    <button class="button is-link">Submit</button>
+    <ul>
+        <li>
+        <Link to="/App4">
+          <button className="button is-link">Submit</button>
+        </Link>
+        </li>
+    </ul>
   </div>
   <div class="control">
     <button class="button is-link is-light">Cancel</button>
@@ -89,7 +105,7 @@ function App2() {
 </div>
 </div>
     </body>
-    <Footer></Footer>
+
     </div>
 
     );

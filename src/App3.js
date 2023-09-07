@@ -7,7 +7,6 @@ import WelcomeBanner from './WelcomeBanner';
 function App3() {
 	return (
 	  <div className="App">
-			<Navbar/>
 		<header className="App-header">
 		<div className="app">
 	
@@ -55,8 +54,6 @@ Last Updated: [Date]</p2>
 </div>
 			</div>
 		</body>
-		
-		<Footer></Footer>
 		</div>
 		
 		 

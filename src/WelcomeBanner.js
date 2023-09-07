@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import './WelcomeBanner.css'; // Import your CSS file for styling
-import App2 from './App2';
+import Estimate from './App2';
 
 
 const WelcomeBanner = () => {
@@ -20,9 +20,9 @@ const WelcomeBanner = () => {
           </ul>
         </div>
       </div>
-      <Route path="/App2">
-        <App2/>
-      </Route>
+      {/* <Route path="/App2">
+        <Estimate/>
+      </Route> */}
     </header>
   );
 };

@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Card from './cards';
 import WelcomeBanner from './WelcomeBanner';
 import Footer from './footer';
+import Estimate from "./App2";
+import TOS from "./App3";
+import EndPage from "./App4";
 
 
 function App() {
@@ -48,6 +51,15 @@ function App() {
           </body>
           </Route>
           {/* Add more routes for other services */}
+          <Route path="/App2">
+            <Estimate/>
+          </Route>
+          <Route path="/App3">
+            <TOS/>
+          </Route>
+          <Route path="/App4">
+            <EndPage/>
+          </Route>
         </Switch>
         <Footer />
       </Router>
