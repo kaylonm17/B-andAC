@@ -19,33 +19,31 @@ function App2() {
     <body className="app-color">
     <div className="form-container">
     <div class="field">
-  <label class="label"> First Name</label>
+  <label class="label"></label>
   <div class="control">
     <input class="input" type="text" placeholder="First Name"></input>
   </div>
 </div>
 
 <div class="field">
-  <label class="label">Last Name</label>
+  <label class="label"></label>
   <div class="control">
     <input class="input" type="text" placeholder="Last Name"></input>
   </div>
 </div>
 
 <div class="field">
-  <label class="label">Address</label>
+  <label class="label"></label>
   <div class="control has-icons-right">
     <input class="input" type="text" placeholder="Address here"></input>
   </div>
 </div>
 
 <div class="field">
-  <label class="label">Email</label>
+  <label class="label"></label>
   <div class=" has-icons-right">
     <input class="input " type="email" placeholder="Email here" ></input>
-
   </div>
-  <p class="help is-danger">This email is invalid</p>
 </div>
 
 <div class="checkbox-container">
