@@ -1,25 +1,47 @@
 .form-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 25px;
+    
+    margin: 10 auto;
+    padding: 10px;
   }
   
   .field {
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    padding: 0px;
+    
   }
   
   .label {
-    flex: 1;
-    margin-right: 10px;
+
+    margin: 10px;
   }
   
   .input {
     flex: 2;
   }
   
+  .form-space {
+    padding-right: 10px;
+  }
+
+  .form-spaceL {
+    padding-left: 10px;
+  }
   /* Additional styling for other form elements can go here */
   
+  .checkbox-container {
+    border: 2px solid black; /* Add a black border to the checkbox container */
+    padding: 10px; /* Add padding for spacing */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* This ensures the container only takes up the necessary width */
+  }
+
+

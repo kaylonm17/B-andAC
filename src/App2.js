@@ -19,30 +19,32 @@ function App2() {
     <body className="app-color">
     <div className="form-container">
     <div class="field">
-  <label class="label"></label>
   <div class="control">
+  <div className="form-space">
     <input class="input" type="text" placeholder="First Name"></input>
-  </div>
-</div>
-
-<div class="field">
-  <label class="label"></label>
-  <div class="control">
     <input class="input" type="text" placeholder="Last Name"></input>
   </div>
-</div>
-
-<div class="field">
-  <label class="label"></label>
+  </div>
   <div class="control has-icons-right">
+  <div className="form-spaceL">
     <input class="input" type="text" placeholder="Address here"></input>
+    <input class="input " type="email" placeholder="Email here" ></input>
   </div>
 </div>
+</div>
+<div class="field">
+  <label class="label"></label>
+  <div class="control">
+    
+  </div>
+</div>
+
+
 
 <div class="field">
   <label class="label"></label>
   <div class=" has-icons-right">
-    <input class="input " type="email" placeholder="Email here" ></input>
+
   </div>
 </div>
 
@@ -58,7 +60,7 @@ function App2() {
   </div>
 
 
-<div class="field">
+<div class="">
   <label class="label">Message</label>
   <div class="control">
     <textarea class="textarea" placeholder="Describe what you're expreriencing"></textarea>
